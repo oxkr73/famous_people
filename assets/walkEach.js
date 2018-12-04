@@ -30,7 +30,7 @@ fileTemp.then(
       famous.push(new People(name, live, desc));
     });
 
-    fs.writeFile("famous.json", JSON.stringify(famous), "utf8", err => {
+    fs.writeFile("../famous.json", JSON.stringify(famous), "utf8", err => {
       if (err) {
         throw err;
       }

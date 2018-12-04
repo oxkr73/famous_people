@@ -10,8 +10,6 @@ const famousJson = new Promise((resolve, reject) => {
   });
 });
 
-let timeStyle = "";
-let out = "";
 let start = 2000;
 const today = "" + new Date().getFullYear();
 const ages = [
@@ -63,59 +61,10 @@ let famousCtrl = {
       }
 
       res.json(famousPeople);
-
-      /*
-  timeStyle = `
-        #main_time_bar{
-            background: #ddd;
-            display:inline-block;
-            width:100%;
-            min-height:300px;
-            position:relative;
-        }
-        .famous{
-          position:absolute;
-          text-align:center;
-        }
-        .pointer {
-          display: block;
-          max-width:40px;
-          margin:0 auto;
-        }
-        .famous:hover{
-          cursor:pointer;
-        }
-        .famous:hover .pointer {
-          font-size: 100px;
-          line-height: 18px;
-        }
-        .f-data{
-          display:none;
-        }
-        .famous:hover  .f-data{
-          display:block;
-        }
-    `;
-  out = `<!DOCTYPE html>
-                <html lang="en">
-                <head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                    <title>Famous People</title>
-                    <style>${timeStyle}</style>
-                </head>
-                <body>
-                <h1>Famous People</h1>
-                <p>From ${start} to ${today}</p>
-                ${timeResult}
-                <div id="main_time_bar">${famous}</div>
-                </body>
-            </html>`;
-            */
     });
   }
 };
+
 let timeLine = century => {
   let centuriesLine = [];
   const totalCenturies = 1 + (2000 - century) / 100;
@@ -146,7 +95,7 @@ let searchByYear = (start, people) => {
       let afterCrist = death.split(" ");
       death = afterCrist[0];
     }
-    //console.log(Number(born) >= start);
+
     if (born >= start) {
       people[index].born = born;
       peopleMatch.push(people[index]);
