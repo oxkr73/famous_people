@@ -20,8 +20,8 @@ function People(name, live, desc) {
 
 fileTemp.then(
   result => {
-    let splited = result.split(/\r?\n/);
-    splited.forEach(people => {
+    let splitted = result.split(/\r?\n/);
+    splitted.forEach(people => {
       const name = people.substring(0, people.indexOf("(")).trim();
       const live = people
         .substring(people.indexOf("(") + 1, people.indexOf(")"))

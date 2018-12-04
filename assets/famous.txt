@@ -73,7 +73,7 @@ Alfred Hitchcock (1899 – 1980) English / American film producer, director
 Michael Jackson (1958 – 2009) American musician
 Madonna (1958 – ) American musician, actress, author
 Mata Hari (1876 – 1917) Dutch exotic dancer, executed as spy
-Cleopatra (69 – 30 BCE) Queen of Egypt
+Cleopatra (69 BCE – 30 BCE) Queen of Egypt
 Grace Kelly (1929 – 1982) American actress, Princess of Monaco
 Steve Jobs (1955 – 2012) co-founder of Apple computers
 Ronald Reagan (1911 – 2004) US President 1981-1989
@@ -98,3 +98,4 @@ Billie Holiday (1915 – 1959) American jazz singer
 J.R.R. Tolkien (1892 – 1973) British author
 Billie Jean King (1943 – ) American tennis player and human rights activist
 Anne Frank (1929 – 1945) Dutch Jewish author who died in Holocaust
+Famous One (2000 – ) Famous one for testing on it
