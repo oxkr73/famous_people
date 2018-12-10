@@ -59,16 +59,19 @@ let famousCtrl = {
                   <div class="f-data">${famousPeople[index].live}</div>
                 </div>`;
       }
-
       res.json(famousPeople);
     });
+  },
+  centuries: (req, res) => {
+    start = req.params.year || start;
+    const totalCenturies = 1 + (2000 - start) / 100;
+    res.json({ totalCenturies, ages });
   }
 };
 
 let timeLine = century => {
   let centuriesLine = [];
   const totalCenturies = 1 + (2000 - century) / 100;
-  console.log(totalCenturies);
   for (let index = 0; index < totalCenturies; index++) {
     let cents = `<div class="century_${index}"></div>`;
     centuriesLine.push(cents);
@@ -101,6 +104,7 @@ let searchByYear = (start, people) => {
       peopleMatch.push(people[index]);
     }
   }
+  //console.log(peopleMatch);
   return peopleMatch;
 };
 
